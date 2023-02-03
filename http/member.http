@@ -1,0 +1,22 @@
+### 멤버 저장
+POST http://localhost:8080/api/member
+Content-Type: application/json
+
+{
+    "id" : "tester",
+    "password" : "tester",
+    "name": "테스터"
+}
+
+### 멤버 조회
+GET http://localhost:8080/api/member/1
+
+### 멤버 수정
+PUT http://localhost:8080/api/member/1
+Content-Type: application/json
+
+{
+    "id" : "bang-update",
+    "password" : "bang-update",
+    "name": "방병준 수정"
+}

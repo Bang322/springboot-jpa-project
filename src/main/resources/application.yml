@@ -1,0 +1,16 @@
+# DB 설정
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: bang
+    password: bang
+    url: jdbc:oracle:thin:@localhost:1521:XE
+
+# JPA 설정
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
