@@ -1,0 +1,37 @@
+### 메뉴 저장
+POST http://localhost:8080/api/menu
+Content-Type: application/json
+
+{
+    "path" : "/main",
+    "name": "메인",
+    "useYn": "Y",
+    "children": [
+        {
+            "path" : "/child1",
+            "name": "자식1",
+            "useYn": "Y"
+        },
+        {
+            "path" : "/child2",
+            "name": "자식2",
+            "useYn": "Y"
+        }
+    ]
+}
+
+### 멤버 조회
+GET http://localhost:8080/api/test
+
+### 모든 메뉴 조회
+GET http://localhost:8080/api/menus
+
+### 멤버 수정
+PUT http://localhost:8080/api/member/1
+Content-Type: application/json
+
+{
+    "id" : "bang-update",
+    "password" : "bang-update",
+    "name": "방병준 수정"
+}
